@@ -2,7 +2,6 @@ import pandas as pd
 import time
 from playwright.sync_api import sync_playwright
 
-
 class FormPage:
     def __init__(self, page):
         self.page = page

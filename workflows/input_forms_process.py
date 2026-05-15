@@ -1,7 +1,6 @@
 from pages.form_page import FormPage
 from playwright.sync_api import sync_playwright
 
-
 class InputForm:
     def __init__(self):
         self.page = ""
