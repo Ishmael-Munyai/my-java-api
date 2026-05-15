@@ -1,17 +1,12 @@
-from models.form import FormPage
+from pages.form_page import FormPage
 from playwright.sync_api import sync_playwright
+from workflows.input_forms_process import InputForm
 
-with sync_playwright() as p:
-    # Channel can be "chrome", "msedge", "chrome-beta", "msedge-beta" or "msedge-dev".
-    browser = p.chromium.launch(channel="msedge", headless=False, slow_mo=50)
-    page = browser.new_page()
+def execute():
+    input_form = InputForm()
 
-    form_page = FormPage(page)
+    #Filling out online input forms
+    input_form.run_input_forms_process()
 
-    print("bot has started")
-    form_page.open("https://rpachallenge.com/")
-
-    form_page.page.wait_for_load_state('networkidle')
-
-    form_page.download_report()
-    form_page.page.pause()
+if __name__ == "__main__":
+    execute()
