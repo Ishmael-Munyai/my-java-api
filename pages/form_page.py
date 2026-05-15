@@ -50,21 +50,19 @@ class FormPage:
             for field, selector in self.field_mapping.items():
                 if field in row and pd.notna(row[field]):
                     value = str(row[field])
+                    mapped_data= str(row[field])
 
                     # Log the action
                     print(f"Filling {selector} with {value}")
                     self.page.fill(selector, value)
                     
-                
-
             # Wait for 3 seconds
             self.page.wait_for_timeout(3000)
 
             print("submitting form")
             self.submit_btn.wait_for(state="visible")
             self.submit_btn.click()
-            
-        return mapped_data
+
 
     def fill_form(self, data):
         """
