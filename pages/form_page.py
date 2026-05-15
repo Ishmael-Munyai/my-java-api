@@ -63,14 +63,4 @@ class FormPage:
             self.submit_btn.wait_for(state="visible")
             self.submit_btn.click()
 
-
-    def fill_form(self, data):
-        """
-        data: dict containing one row of Excel data
-        field_mapping: dict mapping Excel column names -> CSS selectors
-        """
-        for field, selector in self.field_mapping.items():
-            if field in data and pd.notna(data[field]):
-                self.page.fill(selector, str(data[field]))
-        self.page.click("button[type='submit']")
  
