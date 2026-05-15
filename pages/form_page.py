@@ -47,19 +47,21 @@ class FormPage:
         self.start_btn.wait_for(state="visible")
         self.start_btn.click()
 
-        # Loop through each row in the Excel DataFrame, 
-        # map the Excel columns to form field names using field_mapping, 
-        # build a structured record (mapped_row), append it to mapped_data, 
-        # and then click the Submit button to send the form.
         for _, row in data.iterrows():
             for field, selector in self.field_mapping.items():
                 if field in row and pd.notna(row[field]):
-                    self.page.fill(selector, str(row[field]))
-                print("submitting form")
+                    value = str(row[field])
+
+                    # Log the action
+                    print(f"Filling {selector} with {value}")
+                    self.page.fill(selector, value)
+                    
+                
 
             # Wait for 3 seconds
             self.page.wait_for_timeout(3000)
 
+            print("submitting form")
             self.submit_btn.wait_for(state="visible")
             self.submit_btn.click()
             
