@@ -24,7 +24,7 @@ class InputForm:
             print("process running")
 
             # Step 1: Open the RPA Challenge website.
-            form_page.open("https://rpachallenge.com/")
+            form_page.open_website("https://rpachallenge.com/")
 
             # Step 2: Download the report (custom method in FormPage).
             form_page.download_report()

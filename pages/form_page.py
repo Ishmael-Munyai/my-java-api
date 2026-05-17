@@ -19,7 +19,7 @@ class FormPage:
             "Phone Number": "input[ng-reflect-name='labelPhone']"
         }
 
-    def open(self, url):
+    def open_website(self, url):
         self.page.goto(url)
 
     def download_report(self):
