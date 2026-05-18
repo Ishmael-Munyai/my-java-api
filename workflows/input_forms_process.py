@@ -37,4 +37,4 @@ class InputForm:
 
             # Pause execution so you can interact with the browser manually
             # (useful for debugging or inspecting the filled form).
-            page.pause()
+            page.close()
