@@ -6,3 +6,5 @@ flowchart TD
     C -->|Two| E[Related_party]
     C -->|Three| F[Not entity or related party]
     D --> G{Search customer}
+    G -->|Found| H[7111]
+    G -->|Not Found| F[8053]
