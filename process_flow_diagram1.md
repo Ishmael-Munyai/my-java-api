@@ -8,4 +8,4 @@ flowchart TD
     D --> G{1000 - Search customer}
     G -->|Found| H[7111 - Attach photo & signature images]
     G -->|Not Found| I[8053 - Create new cif_id]
-    H --> J[Save status]
+    H --> J[Process completed]
