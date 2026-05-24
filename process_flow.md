@@ -1,3 +1,4 @@
+'''mermaid'''
 flowchart TD
     Start([Start: Manual Process]) --> Identify[Identify Process]
     Identify --> Analyze[Analyze Requirements]
