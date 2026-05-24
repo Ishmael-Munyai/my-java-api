@@ -4,4 +4,4 @@ flowchart TD
     B --> C{Let me think}
     C -->|One| D[Entity]
     C -->|Two| E[Related_party]
-    C -->|Three| F[fa:fa-car Car]
+    C -->|Three| F[Not entity or related party]
