@@ -6,5 +6,5 @@ flowchart TD
     C -->|Two| E[Related_party]
     C -->|Three| F[Not entity or related party]
     D --> G{Search customer}
-    G -->|Found| H[7111]
-    G -->|Not Found| I[8053]
+    G -->|Found| H[7111 - Attach documents]
+    G -->|Not Found| I[8053 - Create new cif_id]
