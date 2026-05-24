@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[CIF creation] -->|Get customer data| B(Open fcr)
+    A[Open fcr] -->|Get customer data| B(Login to fcr)
     B --> C{Type}
     C -->|One| D[Entity]
     C -->|Two| E[Related_party]
