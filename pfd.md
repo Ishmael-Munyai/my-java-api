@@ -5,6 +5,6 @@ flowchart TD
     C --> D[ Validate Against Business Rules]
     D --> E{Data Complete?}
     E -->|No| F[ Flag for Manual Review]
-    E -->|Yes| G[🗂 Register Claim in System]
+    E -->|Yes| G[ Register Claim in System]
     F --> H[ Notify Claims Officer]
     G --> I[ Claim Registered Successfully]
