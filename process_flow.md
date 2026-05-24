@@ -1,7 +1,6 @@
-'''mermaid
-flowchart LR
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+The following code-block will be rendered as a Mermaid diagram:
 
+```mermaid
+flowchart LR
+  A --> B
+```
