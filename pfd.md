@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     Start([Order Placed]) --> CheckStock[Check Inventory]
     CheckStock --> ProcessOrder[Process Order]
