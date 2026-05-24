@@ -1,1 +1,23 @@
-
+'''mermaid
+flowchart TD
+    Start([Start: Manual Process]) --> Identify[Identify Process]
+    Identify --> Analyze[Analyze Requirements]
+    Analyze --> Design[Design RPA Solution]
+    Design --> Develop[Develop Bot]
+    Develop --> Test[Test & Validate]
+    Test --> TestPass[s11]
+    TestPass -->|No| Develop
+    TestPass -->|Yes| Deploy[Deploy to Production]
+    Deploy --> Monitor[Monitor & Support]
+    Monitor --> Optimize[Optimize Performance]
+    Optimize --> EndNode([Process Automated])
+    
+    classDef processStep stroke:#818cf8,fill:#eef2ff
+    classDef decision stroke:#fb923c,fill:#fff7ed
+    classDef startStyle stroke:#4ade80,fill:#f0fdf4
+    classDef endStyle stroke:#f87171,fill:#fef2f2
+    
+    class Identify,Analyze,Design,Develop,Test,Deploy,Monitor,Optimize processStep
+    class TestPass decision
+    class Start startStyle
+    class EndNode endStyle
