@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[login to fcr] -->|Get customer data| B(Open a batch)
+    A[Login to fcr] -->|Get customer data| B(Open a batch)
     B --> C{Type}
     C -->|One| D[Entity]
     C -->|Two| E[Related_party]
