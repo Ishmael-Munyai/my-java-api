@@ -15,4 +15,5 @@ flowchart TD
     M --> N[CH098]
     N --> O{Signatory?}
     O -->|Yes| H[7111 - Attach photo & signature images]
+    O -->|No| J[Process completed]
     
