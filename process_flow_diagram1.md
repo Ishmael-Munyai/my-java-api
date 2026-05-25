@@ -9,4 +9,5 @@ flowchart TD
     G -->|Found| H(7111 - Attach photo & signature images)
     G -->|Not Found| I(8053 - Create new cif_id)
     H --> J[Process completed]
-    I --> K(CIM33)
+    I --> K[CIM33]
+    K --> L[CIM34]
