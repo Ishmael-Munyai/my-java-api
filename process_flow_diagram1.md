@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[CIF creation] -->|Get customer\ubo data| B(lauch_login_nav)
+    A[CIF creation] -->|Get customer\ubo data| B(lauch_login_nav - 9001/9002)
     B --> C{Type}
     C -->|One| D[Entity]
     C -->|Two| E[Related_party]
