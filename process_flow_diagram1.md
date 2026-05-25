@@ -12,3 +12,7 @@ flowchart TD
     I --> K[CIM33]
     K --> L[CIM34]
     L --> M[CIM09]
+    M --> N[CH098]
+    N --> O{Signatory?}
+    O -->|Yes| H[7111 - Attach photo & signature images]
+    
