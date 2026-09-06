@@ -1,1 +1,0 @@
-from org.sikuli.script import Screen
